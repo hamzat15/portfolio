@@ -1,33 +1,19 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import  NavN from "./components/Navbar"
-import ExampleOne from "./components/profil";
-import Footer from './components/footer';
-import ZoomEx from "./components/tech";
-import ContactUs from "./components/ContactForm";
-import About from "./components/info";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './views/Home'
 
 
-export default function App() {
+const App = () => {
   return (
-    <Router>
-      <div>
-        <Switch>
-          <Route path="/">
-          <ExampleOne />
-          <NavN />
-          <About />
-          <ZoomEx />
-          <ContactUs />
-          <Footer />
-          </Route> 
-        </Switch>
-      </div>
-    </Router>
+    <div>
+      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
-}
+};
+
+export default App;
