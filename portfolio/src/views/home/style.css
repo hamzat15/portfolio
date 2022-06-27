@@ -1,0 +1,19 @@
+body{
+    font-family: Verdana, sans-serif;
+
+}
+
+h3{
+    text-align: center;
+
+}
+
+.contain{
+    position: absolute;
+    background: white;
+    border: 2px solid black;
+    width: 500px;
+    height: 400px;
+    left: 25%;
+    margin-top: 20px;
+}

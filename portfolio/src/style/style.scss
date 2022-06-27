@@ -24,7 +24,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 120%;
+    height: 10%;
     transform: rotate(-45deg);
   }
   
@@ -112,3 +112,12 @@
       opacity: 0.6;
     }
   }
+
+
+  @media screen and (min-width: 780px){
+    
+   .stars{
+    height: 120%;
+   }
+    
+    }
